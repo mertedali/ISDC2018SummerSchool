@@ -84,6 +84,8 @@ print("Run is finished!")
 ##########################################################################################
 ##########################################################################################
 
+setwd("your/directory/here")
+# Example: setwd("C:/Users/Mert/Desktop/PhD Thesis/ISDC2018/Summer School/SMTS Pattern Classification and Behavior Mapper")
 source('train_smts.r')
 
 ##########################################################################################
