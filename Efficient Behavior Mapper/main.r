@@ -1,0 +1,10 @@
+rm(list=ls(all=TRUE))
+gc()
+library(rpart)
+library(data.table)
+setwd("your/directory/here")
+# Example: setwd("C:/Users/Mert/Desktop/PhD Thesis/ISDC2018/Summer School/Efficient Behavior Mapper")
+
+source("train_smts.r")
+source("src.r")
+source("mapper_smts.r")
