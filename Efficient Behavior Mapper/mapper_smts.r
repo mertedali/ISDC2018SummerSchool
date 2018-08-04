@@ -1,4 +1,4 @@
-
+library(rpart.plot)
 test_generation_time = proc.time() 
 result<-generate_initial_points(10000,21,1)
 test_generation_time = proc.time()- test_generation_time
@@ -218,6 +218,9 @@ plot.new()
 legend(x="center", ncol = 3,legend = unique(resultfactor), fill = unique(color[as.factor(map_$class)]), title = "Classes", cex = 0.6)
 print("Map produced!")
 plot_time=proc.time()-plot_time
+
+x11()
+rpart.plot(rpart_model, type = 3, extra = 0)
 
 a=temp(art0 = -10, prt0 = -10, alpha = 6.67, beta = 19.90, drt = 0, finaltime = 50, dt = 0.125)[, 1]
 
